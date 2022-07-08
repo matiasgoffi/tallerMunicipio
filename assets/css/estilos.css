@@ -1,3 +1,5 @@
+
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,6 +22,7 @@ nav {
     flex-direction: row;
     justify-content:space-between ;
     background-color: rgb(233, 233, 233);
+    z-index: 99;
 }
 .menu-nav{
    display: flex;
@@ -28,12 +31,17 @@ nav {
    position: relative;
     right: 400px;
 }
+@media only screen and (max-width: 768px){
+    .menu-nav { position: relative; right: 50px;}
+}
+
 .item-nav{
     list-style: none;
     padding: 2rem;
     font-size: medium;
     color: rgb(137, 23, 243);
 }
+
 #logo {
     position: relative;
     left: 20px;
@@ -48,7 +56,14 @@ nav {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
+    transition: background-image 4s ease-in-out;
    
+   
+}
+#hero:hover {
+    background-image: url(/assets/img/caribe.jpg);
+
+
 }
 #cta {
     width: 150px;
@@ -57,7 +72,10 @@ nav {
     border-radius: 5%;
     background-color: rgb(240, 78, 28);
     color: aliceblue;
+  
 }
+
+
 #pdv {
     font-size: 2rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -94,6 +112,14 @@ nav {
     box-shadow: 5px 5px rgb(124, 124, 218);
     background-color: rgb(78, 78, 78);
 }
+.card:hover {
+    transform: scale(1.1);
+    background-color: rgb(170, 170, 170);}
+
+.card:active {
+    transform: scale(0.8);
+    background-color: rgb(170, 170, 170);
+}
 .tituloCard{
     color: aliceblue;
     font-size: 2rem;
@@ -114,9 +140,17 @@ color: aliceblue;
     border-radius: 5px;
     height: 20%;
     color: aliceblue;
-
+}
+.boton:hover{
+    background-color: rgb(80, 80, 177);
 
 }
+.boton:active{
+    background-color: rgb(38, 167, 70);
+    border: 1px ridge white;
+}
+
+
 footer {
         display: flex;
         flex-direction: row;
