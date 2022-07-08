@@ -1,0 +1,132 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    background-color:rgb(233, 233, 233); 
+}
+header {
+    position: sticky;
+    top: 0px;
+    box-shadow: 5px 5px rgb(169, 129, 206);
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    background-color: rgb(233, 233, 233);
+}
+.menu-nav{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   position: relative;
+    right: 400px;
+}
+.item-nav{
+    list-style: none;
+    padding: 2rem;
+    font-size: medium;
+    color: rgb(137, 23, 243);
+}
+#logo {
+    position: relative;
+    left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#hero {
+    background-image: url(/assets/img/hero.jpg);
+    background-size:cover;
+    height: 500px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+   
+}
+#cta {
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(169, 129, 206);
+    border-radius: 5%;
+    background-color: rgb(240, 78, 28);
+    color: aliceblue;
+}
+#pdv {
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pdv-container {
+    position: relative;
+    right: 450px;
+    top: 20px;
+    width: 30%;
+   
+}
+#servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(233, 233, 233);
+    margin-top: 0rem ;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 5px 5px rgb(124, 124, 218);
+    background-color: rgb(78, 78, 78);
+}
+.tituloCard{
+    color: aliceblue;
+    font-size: 2rem;
+
+}
+.imagenCard{
+    width: 100%;
+   
+
+}
+.parrafoCard{
+text-align: center;
+color: aliceblue;
+}
+.boton{
+    width: 50%;
+    background-color:  rgba(17, 64, 218, 0.856);
+    border-radius: 5px;
+    height: 20%;
+    color: aliceblue;
+
+
+}
+footer {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between ;
+        background-color: rgb(17, 16, 16);
+        color: beige;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      
+}
+
