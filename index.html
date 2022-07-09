@@ -10,14 +10,16 @@
 </head>
 <body>
 <main class="grid">
+
+<!--header con menu de navegación-->
 <header>
     <nav>
         <img id="logo" src="./assets/img/flight.png" style="width: 100px;" style="height: 50px ;">
         <ul class="menu-nav">
-            <li class="item-nav"><a href="./index.html">Home</a></li>
-            <li  class="item-nav"><a href="./paginas/sobreNosotros.html">Quienes Somos</a></li>
-            <li  class="item-nav"><a href="./paginas/productos.html">Productos</a></li>
-            <li  class="item-nav"><a href="./paginas/contacto.html">Contacto</a></li>
+            <li class="item-nav"><a  class="link-style" href="./index.html">Home</a></li>
+            <li  class="item-nav"><a class="link-style" href="./paginas/sobreNosotros.html">Quienes Somos</a></li>
+            <li  class="item-nav"><a class="link-style" href="./paginas/productos.html">Productos</a></li>
+            <li  class="item-nav"><a class="link-style" href="./paginas/contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -28,37 +30,12 @@
     </div>
 </section>
 
+<!--section de cards creada dinámicamente con el DOM-->
 <section id="servicios">
-    <div class="card">
-        <h2 class="tituloCard">Viajá al caribe</h2>
-        <hr>
-        <br>
-        <img class="imagenCard"src="./assets/img/caribe.jpg">
-        <br>
-        <p class="parrafoCard"><b>Con nuestros descuentos</b> tu sueño de conocer el mar caribe está al alcance</p>
-        <button class="boton">Comprar</button>
-    </div>
-<br>                             
-    <div class="card">
-        <h2 class="tituloCard">Viajá a la patagonia</h2>
-        <hr>
-        <br>
-        <img class="imagenCard" src="./assets/img/patagonia.jpg">
-        <br>
-        <p class="parrafoCard"><b>Elegí el sur argentino</b> para vivir tu país desde otra perspectiva</p>
-        <button class="boton">Comprar</button>
-    </div>
-<br>
-   <div class="card">
-        <h2 class="tituloCard">Viajá a la patagonia</h2>
-        <hr>
-        <br>
-        <img class="imagenCard" src="./assets/img/patagonia.jpg">
-        <br>
-        <p class="parrafoCard"><b>Elegí el sur argentino</b> para vivir tu país desde otra perspectiva</p>
-        <button class="boton">Comprar</button>
-    </div>
+    <div id="card"></div>
 </section>
+
+<!--footer-->
 <footer>
     <p style="position: relative; left: 20px">Copyright 2022. <a>@TalleresMunicipales.</a></p>
     <div id="redes-sociales" style="position: relative; right: 400px; padding: 1rem;">
@@ -67,9 +44,8 @@
     </div>  
 </footer>
 
-
-
-
+<!--script index.js-->
+<script src="./assets/js/index.js"></script>
 </main>
 </body>
 </html>
